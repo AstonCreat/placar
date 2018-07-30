@@ -1,0 +1,159 @@
+@font-face {
+  font-family:DS-DIGI;
+  src: url(../font/DS-DIGI.ttf);
+}
+
+
+.fundoB{
+  /* background:rgb(197, 197, 197); */
+  width: 30%;
+  min-height: 58.7rem;
+  /* tirei o z-index */
+  /* z-index: -1; */
+
+}
+.fundoV{
+  background:rgb(0, 158, 61);
+  width: 30%;
+  min-height: 58.7rem;
+   /* tirei o z-index */
+  /* z-index: -1; */
+
+}
+.frenteUm{
+  z-index: 1000;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 11.3%;
+}
+.frenteDois{
+  z-index: 1000;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 16.8%;
+}
+
+.starButton{
+  width: 9rem;
+  height: 9.3rem;
+  background:  #aa0000;
+  color: white;
+  font-size: 40pt;
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  font-family: DS-DIGI;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pauseButton{
+  width: 9rem;
+  height: 9.3rem;
+  background:  #aa0000;
+  color: white;
+  font-size: 40pt;
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  font-family: DS-DIGI;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cronometroUm{
+  width: 30px;
+  background:rgb(197, 197, 197);
+  font-size: 28pt;
+  padding: 2px;
+  font-family: DS-DIGI;
+}
+.col-3{
+  max-width: 24.2%;
+}
+.cronometroDois{
+  color: white;
+  background: #000;
+  font-size: 70pt;
+  padding: 5px;
+  border-bottom-right-radius: 8px;
+  font-family: DS-DIGI;
+}
+.fundoBranco{
+  min-width: 100%;
+  min-height: 600px;
+  background: #fff;
+  font-size: 18rem;
+  z-index: 100;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.fundoDado{
+  min-width: 100%;
+  min-height: 600px;
+  /* background: #fff; */
+  color: #fff;
+  font-size: 18rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extra{
+  bottom: 5.99rem;
+  right: -0.92rem;
+  z-index: 100;
+}
+.vantagem{
+width: 8rem;
+height: 6rem;
+background:#ffee04 ;
+font-size: 5rem;
+
+align-items: center;
+}
+.punicao{
+  width: 8rem;
+  height: 6rem;
+  background: #da0101 ;
+  color: white;
+  font-size: 5rem;
+  
+  align-items: center;
+  }
+
+.valores{
+  background: rgb(247, 247, 247);
+   width: 9rem;
+   min-height: 141px;
+   font-size: 40pt;
+   border-radius: 4px;
+   
+   align-items: center;
+  }
+  .casaButton{
+    left: 79px;
+  }
+
+  .botao{
+    margin-top: 8px;
+    width: 69px;
+    height: 60px;
+    font-size: 18pt;
+    padding-top: 0.6rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-info{
+    background: #6c757d !important;
+    border-color: #6c757d !important;
+  }
