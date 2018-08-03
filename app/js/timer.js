@@ -3,6 +3,7 @@ const moment = require('moment');
 let segundos;
 
 
+
 module.exports = {
   iniciar(el) {
     console.log(el);
@@ -17,3 +18,4 @@ module.exports = {
     return moment().startOf('day').seconds(segundos).format("HH:mm:ss");
   }
 }
+
