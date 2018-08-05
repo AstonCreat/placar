@@ -9,14 +9,15 @@ let botaoPlay = document.querySelector('.fa-play-circle');
 let tempo1 = document.querySelector('.time1');
 
 let placaB = document.querySelector('#lutadorBranco');
-let totalvgBranco = document.querySelector('#totalVan');
+let totalvantagemFinal = document.querySelector('#totalVan');
+let totalpunicaoFinal = document.querySelector('#totalPunicaoF');
 
 // pontos branco
 let totalDoisB = document.querySelector('#totalDoisB');
 let totaltresB = document.querySelector('#totalTresB');
 let totalquatroB = document.querySelector('#totalQuartroB');
 let totalvantagemB = document.querySelector('#totalV');
-let totalpunicaoB = document.querySelector('#totalP');
+let totalpunicaoB = document.querySelector('#totalPB');
 
 
 // categoria
@@ -30,39 +31,47 @@ function selectCategoria() {
 // onclick 2 pontos
 function btn2B() {
   doisPontos(totalDoisB);
+  totalB();
 }
 function btnM2B() {
   menosDois(totalDoisB);
+  totalB();
 }
 // onclick 3 pontos
 function btn3B() {
   tresPontos(totaltresB);
+  totalB();
 }
 function btnM3B() {
   menosTres(totaltresB);
+  totalB();
 }
 // onclick 4 pontos
 function btn4B() {
   quatroPontos(totalquatroB);
+  totalB();
 }
 function btnM4B() {
   menosQuatro(totalquatroB);
+  totalB();
 }
 // onclick Vantagem
 function btn1B() {
   umPonto(totalvantagemB);
-  
+  totalV();
 }
 function btnM1B() {
    menosUM(totalvantagemB);
-  totalvgBranco.innerHTML = totalvantagemB.textContent;
+  totalV();
 }
 // onclick Punição
 function btnP1B() {
   punicao(totalpunicaoB);
+  totalP();
 }
 function btnPM1B() {
   mPunicao(totalpunicaoB);
+  totalP();
 }
 // fuções de pontos
 
@@ -169,6 +178,43 @@ function mPunicao(event) {
   }
 }
 
+function getPontos(target){
+  if(target.textContent == '')
+    return 0;
+
+  return parseInt(target.textContent);
+}
+
+function totalV(){
+  let total = getPontos(totalvantagemB);
+  console.log(total)
+
+  if(total)
+  totalvantagemFinal.innerHTML = total;
+  else
+  totalvantagemFinal.innerHTML = '';
+
+}
+function totalP(){
+  let total = getPontos(totalpunicaoB);
+  console.log(total)
+
+  if(total)
+  totalpunicaoFinal.innerHTML = total;
+  else
+  totalpunicaoFinal.innerHTML = '';
+
+}
+function totalB(){
+  let total = getPontos(totalDoisB) + getPontos(totaltresB) + getPontos(totalquatroB);
+  console.log(total)
+
+  if(total)
+  placaB.innerHTML = total;
+  else
+  placaB.innerHTML = '';
+
+}
 
 
 
