@@ -7,7 +7,8 @@
 .fundoB{
   /* background:rgb(197, 197, 197); */
   width: 30%;
-  min-height: 58.7rem;
+  min-height: 59.9rem;
+  background:rgba(243, 243, 243, 0.829);
   /* tirei o z-index */
   /* z-index: -1; */
 
@@ -15,7 +16,7 @@
 .fundoV{
   background:rgb(0, 158, 61);
   width: 30%;
-  min-height: 58.7rem;
+  min-height: 59.9rem; 
    /* tirei o z-index */
   /* z-index: -1; */
 
@@ -26,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 11.3%;
+  top: 11.1%;
 }
 .frenteDois{
   z-index: 1000;
@@ -34,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 16.8%;
+  top: 16.6%;
 }
 
 .starButton{
@@ -87,14 +88,16 @@
 .fundoBranco{
   min-width: 100%;
   min-height: 600px;
-  background: #fff;
+  /* background: #fff; */
   font-size: 18rem;
   z-index: 100;
 
   align-items: center;
   justify-content: center;
 }
-
+.toggle{
+  display: none;
+}
 .fundoDado{
   min-width: 100%;
   min-height: 600px;

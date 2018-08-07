@@ -16,7 +16,7 @@
 
 <body class="container-fluid p-0">
     <!-- topo -->
-    <section style="background: dodgerblue">
+    <section>
         <div class="row col-12 m-0">
             <!-- logo 1 ok no js -->
             <div class="col" onclick="logoUm()">
@@ -26,20 +26,24 @@
             <div class="col-6">
                 <label for="" class="font-weight-bold col-form-label-lg">Selecione categoria:</label>
                 <select id="categoria" class="form-control"onchange="selectCategoria()" >
-                    <option selected disabled>----Selecione----</option>
-                    <option value="1">PRE-MIRIN</option>
-                    <option value="2">MIRIN</option>
-                    <option value="3">INFATIL / INFANTO - JUVENIL</option>
+                    <option value="0"selected disabled>----Selecione----</option>
+                    <option value="1">PRÉ-MIRIM</option>
+                    <option value="2">MIRIM</option>
+                    <option value="3">INFANTIL / INFANTO - JUVENIL</option>
                     <option value="4">JUVENIL</option>
-                    <option value="5">ADULTO</option>
-                    <option value="6">MASTER I -5</option>
-                    <option value="6">MASTER I -6</option>
-                    <option value="7">MASTER 2 a 6</option>
+                    <option value="5">ADULTO - BRANCA</option>
+                    <option value="6">ADULTO - AZUL</option>
+                    <option value="7">ADULTO - ROXA</option>
+                    <option value="8">ADULTO - MARRON</option>
+                    <option value="9">ADULTO - PRETA</option>
+                    <option value="10">MASTER I -5</option>
+                    <option value="11">MASTER I -6</option>
+                    <option value="12">MASTER 2 a 6</option>
                 </select>
             </div>
             <!-- logo dois stop -->
             <div class="col">
-                <img class="img-fluid float-right" src="img/Logo.png" alt="" width="120" onclick="stop()">
+                <img class="img-fluid float-right" src="img/Logo.png" alt="" width="120" onclick="stop()" style="cursor: pointer;">
             </div>
         </div>
     </section>
@@ -54,14 +58,12 @@
         </div>
         <div class="frenteDois container col-12 row">
             <div class="starButton">
-                <i class="fa fa-play-circle fa-2x" aria-hidden="true" onclick="play()"></i>
-                <!-- <i class="fa fa-pause-circle fa-2x d-none" aria-hidden="true" id="pause"></i> -->
+                <i class="fa fa-play-circle fa-2x" aria-hidden="true" onclick="play()" id="playId" style="cursor: pointer;"></i>
+                <i class="fa fa-pause-circle fa-2x toggle " aria-hidden="true" id="pauseId" onclick="pause()" style="cursor: pointer;"></i>
             </div>
             <div class="cronometroDois col-2  font-weight-bold">
                 <div class="form-inline d-flex justify-content-center align-content-center">
-                        <span class="min">00</span>
-                        <span>:</span>
-                        <span class="secod">00</span>
+                        <span id="tempo2">00:00</span>
                 </div>
                 
             </div>
@@ -102,8 +104,8 @@
                 </div>
                 <div class="col-12 row">
                     <div class="casaButton col-10">
-                        <span class="btn btn-info botao font-weight-bold" onclick="btn2B()">+2</span>
-                        <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM2B()">-2</span>
+                        <button class="btn btn-info botao font-weight-bold" onclick="btn2B()">+2</button>
+                        <button class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM2B()">-2</button>
 
                         <span class="btn btn-info botao font-weight-bold" onclick="btn3B()">+3</span>
                         <span class="btn btn-danger botao font-weight-bold" onclick="btnM3B()">-3</span>
@@ -124,49 +126,49 @@
         <div class="col-6 fundoV">
             <div class="row">
                 <div class="fundoDado d-flex justify-content-center align-content-center font-weight-bold">
-                    <p ></p>
+                    <p id="lutadorVerde"></p>
                 </div>
                 <div class="row col-12 extra d-flex justify-content-end align-items-center p-0">
                     <div class="vantagem d-flex justify-content-center align-content-center font-weight-bold">
-                        <p></p>
+                        <p id="totalVantagemFinalV"></p>
                     </div>
                     <div class="punicao d-flex justify-content-center align-content-center font-weight-bold">
-                        <p onclick="totalpunicao()">-3</p>
+                        <p id="totalpunicaoFinalV"></p>
                     </div>
                 </div>
                 <div class="row col-12 d-flex justify-content-center">
                     <div class="valores mr-1 d-flex  justify-content-center font-weight-bold">
-                        <p onclick="totalDois()">2</p>
+                        <p id="totalDoisV"></p>
                     </div>
                     <div class="valores mr-1 d-flex  justify-content-center font-weight-bold">
-                        <p ></p>
+                        <p id="totalTresV"></p>
                     </div>
                     <div class="valores mr-1 d-flex  justify-content-center font-weight-bold">
-                        <p>4</p>
+                        <p id="totalQuatroV"></p>
                     </div>
                     <div class="valores mr-1 d-flex  justify-content-center font-weight-bold" style="background:  #ffee04">
-                        <p>12</p>
+                        <p id="totalVanV"></p>
                     </div>
                     <div class="valores  mr-1 d-flex  justify-content-center font-weight-bold" style="background:  #da0101 ; color: #fff">
-                        <p>-3</p>
+                        <p id="totalPuniV"></p>
                     </div>
                 </div>
                 <div class="col-12 row">
                     <div class="casaButton col-10">
-                        <div class="btn btn-info botao font-weight-bold" >+2</div>
-                        <span class="btn btn-danger botao font-weight-bold mr-1">-2</span>
+                        <div class="btn btn-info botao font-weight-bold" onclick="btn2V()">+2</div>
+                        <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM2V()">-2</span>
 
-                        <span class="btn btn-info botao font-weight-bold">+3</span>
-                        <span class="btn btn-danger botao font-weight-bold">-3</span>
+                        <span class="btn btn-info botao font-weight-bold" onclick="btn3V()">+3</span>
+                        <span class="btn btn-danger botao font-weight-bold" onclick="btnM3V()">-3</span>
 
-                        <span class="btn btn-info botao font-weight-bold">+4</span>
-                        <span class="btn btn-danger botao font-weight-bold">-4</span>
+                        <span class="btn btn-info botao font-weight-bold" onclick="btn4V()">+4</span>
+                        <span class="btn btn-danger botao font-weight-bold" onclick="btnM4V()">-4</span>
 
-                        <span class="btn btn-info botao font-weight-bold">+1</span>
-                        <span class="btn btn-danger botao font-weight-bold mr-1">-1</span>
+                        <span class="btn btn-info botao font-weight-bold" onclick="btn1V()">+1</span>
+                        <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM1V()">-1</span>
 
-                        <span class="btn btn-info botao font-weight-bold">+1</span>
-                        <span class="btn btn-danger botao font-weight-bold">-1</span>
+                        <span class="btn btn-info botao font-weight-bold" onclick="btnP1V()">+1</span>
+                        <span class="btn btn-danger botao font-weight-bold" onclick="btnPM1V()">-1</span>
                     </div>
                 </div>
             </div>
