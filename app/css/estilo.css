@@ -15,8 +15,6 @@
 }
 .fundoV{
   background:rgb(0, 158, 61);
-  width: 30%;
-  min-height: 59.9rem; 
    /* tirei o z-index */
   /* z-index: -1; */
 
@@ -27,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 11.1%;
+  top: 15.6%;
 }
 .frenteDois{
   z-index: 1000;
@@ -35,32 +33,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 16.6%;
+  top: 23%;
 }
 
 .starButton{
-  width: 9rem;
-  height: 9.3rem;
+  width: 7.7rem;
+  height: 8.9rem;
   background:  #aa0000;
   color: white;
   font-size: 40pt;
   padding: 10px;
   border-bottom-left-radius: 8px;
   font-family: DS-DIGI;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pauseButton{
-  width: 9rem;
-  height: 9.3rem;
-  background:  #aa0000;
-  color: white;
-  font-size: 40pt;
-  padding: 10px;
-  border-bottom-left-radius: 8px;
-  font-family: DS-DIGI;
+  
 
   display: flex;
   align-items: center;
@@ -80,16 +65,17 @@
 .cronometroDois{
   color: white;
   background: #000;
-  font-size: 70pt;
+  font-size: 66pt;
   padding: 5px;
   border-bottom-right-radius: 8px;
   font-family: DS-DIGI;
 }
 .fundoBranco{
+  top: 3rem;
   min-width: 100%;
-  min-height: 600px;
+  min-height: 26rem;
   /* background: #fff; */
-  font-size: 18rem;
+  font-size: 12rem;
   z-index: 100;
 
   align-items: center;
@@ -99,56 +85,73 @@
   display: none;
 }
 .fundoDado{
+  top: 3rem;
   min-width: 100%;
-  min-height: 600px;
+  min-height: 26rem;
   /* background: #fff; */
   color: #fff;
-  font-size: 18rem;
+  font-size: 12rem;
 
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 .extra{
-  bottom: 5.99rem;
-  right: -0.92rem;
+  bottom: 3.99rem;
+  /* right: -0.92rem; */
   z-index: 100;
 }
 .vantagem{
-width: 8rem;
-height: 6rem;
+width: 6rem;
+height: 5rem;
 background:#ffee04 ;
-font-size: 5rem;
+font-size: 3rem;
 
 align-items: center;
 }
 .punicao{
-  width: 8rem;
-  height: 6rem;
+  width: 6rem;
+  height: 5rem;
   background: #da0101 ;
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   
   align-items: center;
   }
 
+.valoresAjuste{
+  z-index: 1015;
+  bottom: 3rem;
+}
+
 .valores{
-  background: rgb(247, 247, 247);
-   width: 9rem;
-   min-height: 141px;
-   font-size: 40pt;
-   border-radius: 4px;
+    background: rgb(247, 247, 247);
+    width: 6.5rem;
+    min-height: 95px;
+    font-size: 20pt;
+    border-radius: 4px;
+    opacity: 0.1;
    
-   align-items: center;
+    display:flex;
+    align-items:center;
+    justify-content:center
   }
   .casaButton{
-    left: 79px;
+    opacity: 0.1;
+    z-index: 1015;
+    bottom: 3rem;
+
+    display: flex;
+    justify-content: center;
+  }
+  .qdTotalponto{
+    opacity: 0.1;
   }
 
   .botao{
-    margin-top: 8px;
-    width: 69px;
-    height: 60px;
+    margin-top: 7px;
+    margin-right: 3px;
+    width: 50px;
+    height: 50px;
     font-size: 18pt;
     padding-top: 0.6rem;
 

@@ -25,8 +25,8 @@
             <!-- select categoria -->
             <div class="col-6">
                 <label for="" class="font-weight-bold col-form-label-lg">Selecione categoria:</label>
-                <select id="categoria" class="form-control"onchange="selectCategoria()" >
-                    <option value="0"selected disabled>----Selecione----</option>
+                <select id="categoria" class="form-control" onchange="selectCategoria()">
+                    <option value="0" selected disabled>----Selecione----</option>
                     <option value="1">PRÉ-MIRIM</option>
                     <option value="2">MIRIM</option>
                     <option value="3">INFANTIL / INFANTO - JUVENIL</option>
@@ -52,7 +52,7 @@
     <!-- Cronometros -->
     <section>
         <div class="frenteUm container col-12 row">
-            <div class="cronometroUm col-3 text-center font-weight-bold">
+            <div class="cronometroUm col-4 text-center font-weight-bold">
                 <span class="time1">00:00:00</span> 
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <i class="fa fa-play-circle fa-2x" aria-hidden="true" onclick="play()" id="playId" style="cursor: pointer;"></i>
                 <i class="fa fa-pause-circle fa-2x toggle " aria-hidden="true" id="pauseId" onclick="pause()" style="cursor: pointer;"></i>
             </div>
-            <div class="cronometroDois col-2  font-weight-bold">
+            <div class="cronometroDois col-3  font-weight-bold">
                 <div class="form-inline d-flex justify-content-center align-content-center">
                         <span id="tempo2">00:00</span>
                 </div>
@@ -71,13 +71,13 @@
     </section>
     <!-- Fim Cronometros -->
     <!-- placar -->
-    <section class="row col-12 m-0 p-0">
-        <div class="col-6 fundoB">
-            <div class="row ">
-                <div class="fundoBranco d-flex justify-content-center align-content-center font-weight-bold">
+    <section class="col-12 m-0 p-0">
+        <div class="row col-12 m-0 p-0">
+            <div class=" row col-6 m-0 p-0">
+                <div class="col-6 fundoBranco d-flex justify-content-center align-content-center font-weight-bold">
                     <p id="lutadorBranco"></p>
                 </div>
-                <div class="row col-12 extra d-flex justify-content-end align-items-center p-0">
+                <div class="col-12 extra d-flex justify-content-end align-items-center p-0">
                     <div class="vantagem d-flex justify-content-center align-content-center font-weight-bold">
                         <p id="totalVan"></p>
                     </div>
@@ -85,7 +85,7 @@
                         <p id="totalPunicaoF"></p>
                     </div>
                 </div>
-                <div class="row col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center valoresAjuste">
                     <div class="valores mr-1 d-flex  justify-content-center font-weight-bold">
                         <p id="totalDoisB"></p>
                     </div>
@@ -102,8 +102,7 @@
                         <p id="totalPB"></p>
                     </div>
                 </div>
-                <div class="col-12 row">
-                    <div class="casaButton col-10">
+                    <div class="casaButton col-12">
                         <button class="btn btn-info botao font-weight-bold" onclick="btn2B()">+2</button>
                         <button class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM2B()">-2</button>
 
@@ -119,16 +118,12 @@
                         <span class="btn btn-info botao font-weight-bold" onclick="btnP1B()">+1</span>
                         <span class="btn btn-danger botao font-weight-bold" onclick="btnPM1B()">-1</span>
                     </div>
-                </div>
             </div>
-        </div>
-
-        <div class="col-6 fundoV">
-            <div class="row">
-                <div class="fundoDado d-flex justify-content-center align-content-center font-weight-bold">
+            <div class="row col-6 m-0 p-0 fundoV">
+                <div class="col-6 fundoDado d-flex justify-content-center align-content-center font-weight-bold">
                     <p id="lutadorVerde"></p>
                 </div>
-                <div class="row col-12 extra d-flex justify-content-end align-items-center p-0">
+                <div class="col-12 extra d-flex justify-content-end align-items-center p-0">
                     <div class="vantagem d-flex justify-content-center align-content-center font-weight-bold">
                         <p id="totalVantagemFinalV"></p>
                     </div>
@@ -136,7 +131,7 @@
                         <p id="totalpunicaoFinalV"></p>
                     </div>
                 </div>
-                <div class="row col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center valoresAjuste">
                     <div class="valores mr-1 d-flex  justify-content-center font-weight-bold">
                         <p id="totalDoisV"></p>
                     </div>
@@ -153,23 +148,21 @@
                         <p id="totalPuniV"></p>
                     </div>
                 </div>
-                <div class="col-12 row">
-                    <div class="casaButton col-10">
-                        <div class="btn btn-info botao font-weight-bold" onclick="btn2V()">+2</div>
-                        <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM2V()">-2</span>
+                <div class="casaButton col-12">
+                    <div class="btn btn-info botao font-weight-bold" onclick="btn2V()">+2</div>
+                    <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM2V()">-2</span>
 
-                        <span class="btn btn-info botao font-weight-bold" onclick="btn3V()">+3</span>
-                        <span class="btn btn-danger botao font-weight-bold" onclick="btnM3V()">-3</span>
+                    <span class="btn btn-info botao font-weight-bold" onclick="btn3V()">+3</span>
+                    <span class="btn btn-danger botao font-weight-bold" onclick="btnM3V()">-3</span>
 
-                        <span class="btn btn-info botao font-weight-bold" onclick="btn4V()">+4</span>
-                        <span class="btn btn-danger botao font-weight-bold" onclick="btnM4V()">-4</span>
+                    <span class="btn btn-info botao font-weight-bold" onclick="btn4V()">+4</span>
+                    <span class="btn btn-danger botao font-weight-bold" onclick="btnM4V()">-4</span>
 
-                        <span class="btn btn-info botao font-weight-bold" onclick="btn1V()">+1</span>
-                        <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM1V()">-1</span>
+                    <span class="btn btn-info botao font-weight-bold" onclick="btn1V()">+1</span>
+                    <span class="btn btn-danger botao font-weight-bold mr-1" onclick="btnM1V()">-1</span>
 
-                        <span class="btn btn-info botao font-weight-bold" onclick="btnP1V()">+1</span>
-                        <span class="btn btn-danger botao font-weight-bold" onclick="btnPM1V()">-1</span>
-                    </div>
+                    <span class="btn btn-info botao font-weight-bold" onclick="btnP1V()">+1</span>
+                    <span class="btn btn-danger botao font-weight-bold" onclick="btnPM1V()">-1</span>
                 </div>
             </div>
         </div>
