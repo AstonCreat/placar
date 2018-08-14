@@ -4,10 +4,10 @@ const { app, BrowserWindow,ipcMain } = require('electron');
 app.on('ready', () => {
     console.log("aplicacao iniciada");
     let mainWindows = new BrowserWindow({
-            //    fullscreen:true,
-            width:1366,
-            height:768,
-            frame:false
+               fullscreen:true,
+            // width:1366,
+            // height:768,
+             frame:false
     });
     mainWindows.loadURL(`file://${__dirname}/app/index.html`);
    });

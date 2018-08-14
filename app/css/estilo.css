@@ -3,163 +3,316 @@
   src: url(../font/DS-DIGI.ttf);
 }
 
+@media ( max-height:1400px){
 
-.fundoB{
-  /* background:rgb(197, 197, 197); */
-  width: 30%;
-  min-height: 59.9rem;
-  background:rgba(243, 243, 243, 0.829);
-  /* tirei o z-index */
-  /* z-index: -1; */
+  .fundoB{
+    
+    width: 30%;
+    min-height: 59.9rem;
+    background:rgba(243, 243, 243, 0.829);
 
-}
-.fundoV{
-  background:rgb(0, 158, 61);
-   /* tirei o z-index */
-  /* z-index: -1; */
-
-}
-.frenteUm{
-  z-index: 1000;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 15.6%;
-}
-.frenteDois{
-  z-index: 1000;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 23%;
-}
-
-.starButton{
-  width: 7.7rem;
-  height: 8.9rem;
-  background:  #aa0000;
-  color: white;
-  font-size: 40pt;
-  padding: 10px;
-  border-bottom-left-radius: 8px;
-  font-family: DS-DIGI;
   
+  }
+  .fundoV{
+    background:rgb(0, 158, 61);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  }
+  .frenteUm{
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15.6%;
+  }
+  .frenteDois{
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 23%;
+  }
+  
+  .starButton{
+    width: 7.7rem;
+    height: 8.9rem;
+    background:  #aa0000;
+    color: white;
+    font-size: 40pt;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    font-family: DS-DIGI;
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cronometroUm{
+    width: 30px;
+    background:rgb(197, 197, 197);
+    font-size: 28pt;
+    padding: 2px;
+    font-family: DS-DIGI;
+  }
+  .col-3{
+    max-width: 24.2%;
+  }
+  .cronometroDois{
+    color: white;
+    background: #000;
+    font-size: 66pt;
+    padding: 5px;
+    border-bottom-right-radius: 8px;
+    font-family: DS-DIGI;
+  }
+  .fundoBranco{
+    top: 3rem;
+    min-width: 100%;
+    min-height: 26rem;
 
-.cronometroUm{
-  width: 30px;
-  background:rgb(197, 197, 197);
-  font-size: 28pt;
-  padding: 2px;
-  font-family: DS-DIGI;
-}
-.col-3{
-  max-width: 24.2%;
-}
-.cronometroDois{
-  color: white;
-  background: #000;
-  font-size: 66pt;
-  padding: 5px;
-  border-bottom-right-radius: 8px;
-  font-family: DS-DIGI;
-}
-.fundoBranco{
-  top: 3rem;
-  min-width: 100%;
-  min-height: 26rem;
-  /* background: #fff; */
-  font-size: 12rem;
-  z-index: 100;
+    font-size: 12rem;
+    z-index: 100;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle{
+    display: none;
+  }
+  .fundoDado{
+    top: 3rem;
+    min-width: 100%;
+    min-height: 26rem;
 
-  align-items: center;
-  justify-content: center;
-}
-.toggle{
-  display: none;
-}
-.fundoDado{
-  top: 3rem;
-  min-width: 100%;
-  min-height: 26rem;
-  /* background: #fff; */
-  color: #fff;
-  font-size: 12rem;
-
-  align-items: center;
-  justify-content: center;
-}
-.extra{
-  bottom: 3.99rem;
-  /* right: -0.92rem; */
-  z-index: 100;
-}
-.vantagem{
-width: 6rem;
-height: 5rem;
-background:#ffee04 ;
-font-size: 3rem;
-
-align-items: center;
-}
-.punicao{
+    color: #fff;
+    font-size: 12rem;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .extra{
+    bottom: 3.99rem;
+    z-index: 100;
+  }
+  .vantagem{
   width: 6rem;
   height: 5rem;
-  background: #da0101 ;
-  color: white;
+  background:#ffee04 ;
   font-size: 3rem;
   
   align-items: center;
   }
-
-.valoresAjuste{
-  z-index: 1015;
-  bottom: 3rem;
-}
-
-.valores{
-    background: rgb(247, 247, 247);
-    width: 6.5rem;
-    min-height: 95px;
-    font-size: 20pt;
-    border-radius: 4px;
-    opacity: 0.1;
-   
-    display:flex;
-    align-items:center;
-    justify-content:center
-  }
-  .casaButton{
-    opacity: 0.1;
+  .punicao{
+    width: 6rem;
+    height: 5rem;
+    background: #da0101 ;
+    color: white;
+    font-size: 3rem;
+    
+    align-items: center;
+    }
+  
+  .valoresAjuste{
     z-index: 1015;
     bottom: 3rem;
+  }
+  
+  .valores{
+      background: rgb(247, 247, 247);
+      width: 6.5rem;
+      min-height: 95px;
+      font-size: 20pt;
+      border-radius: 4px;
+      opacity: 0.1;
+     
+      display:flex;
+      align-items:center;
+      justify-content:center
+    }
+    .casaButton{
+      opacity: 0.1;
+      z-index: 1015;
+      bottom: 3rem;
+      display: flex;
+      justify-content: center;
+    }
 
+  
+    .botao{
+      margin-top: 7px;
+      margin-right: 3px;
+      width: 50px;
+      height: 50px;
+      font-size: 18pt;
+      padding-top: 0.6rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+}
+
+@media (min-width: 1410px), and (max-width:1920px){
+  .fundoB{
+    width: 30%;
+    min-height: 59.9rem;
+    background:rgba(243, 243, 243, 0.829);
+  
+  }
+  .fundoV{
+    background:rgb(0, 158, 61);
+    width: 30%;
+    min-height: 59.9rem; 
+  }
+  .frenteUm{
+    z-index: 1000;
+    position: absolute;
     display: flex;
-    justify-content: center;
-  }
-  .qdTotalponto{
-    opacity: 0.1;
-  }
-
-  .botao{
-    margin-top: 7px;
-    margin-right: 3px;
-    width: 50px;
-    height: 50px;
-    font-size: 18pt;
-    padding-top: 0.6rem;
-
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    top: 11.1%;
   }
+  .frenteDois{
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 16.6%;
+  }
+  
+  .starButton{
+    width: 10.8rem;
+    height: 9.3rem;
+    background:  #aa0000;
+    color: white;
+    font-size: 40pt;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    font-family: DS-DIGI;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pauseButton{
+    width: 9rem;
+    height: 9.3rem;
+    background:  #aa0000;
+    color: white;
+    font-size: 40pt;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    font-family: DS-DIGI;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cronometroUm{
+    width: 30px;
+    background:rgb(197, 197, 197);
+    font-size: 28pt;
+    padding: 2px;
+    font-family: DS-DIGI;
+  }
+  .col-3{
+    max-width: 24.2%;
+  }
+  .cronometroDois{
+    color: white;
+    background: #000;
+    font-size: 70pt;
+    padding: 5px;
+    border-bottom-right-radius: 8px;
+    font-family: DS-DIGI;
+  }
+  .fundoBranco{
+    min-width: 100%;
+    min-height: 600px;
+  
+    font-size: 18rem;
+    z-index: 100;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle{
+    display: none;
+  }
+  .fundoDado{
+    min-width: 100%;
+    min-height: 600px;
+  
+    color: #fff;
+    font-size: 18rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .extra{
+    bottom: 5.99rem;
+    right: -0rem;
+    z-index: 100;
+  }
+  .vantagem{
+  width: 8rem;
+  height: 6rem;
+  background:#ffee04 ;
+  font-size: 5rem;
+  
+  align-items: center;
+  }
+  .punicao{
+    width: 8rem;
+    height: 6rem;
+    background: #da0101 ;
+    color: white;
+    font-size: 5rem;
+    
+    align-items: center;
+    }
+  
+  .valores{
+    background: rgb(247, 247, 247);
+     width: 9rem;
+     min-height: 141px;
+     font-size: 40pt;
+     border-radius: 4px;
+     opacity: 0.1;
+     
+     display:flex;
+     align-items:center;
+     justify-content:center
+    }
+    .casaButton{
+      opacity: 0.1;
+      z-index: 1015;
+      
+  
+      display: flex;
+      justify-content: center;
+    }
+  
+    .botao{
+      margin-top: 8px;
+      width: 69px;
+      height: 60px;
+      font-size: 18pt;
+      padding-top: 0.6rem;
+  
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .btn-info{
+      background: #6c757d !important;
+      border-color: #6c757d !important;
+    }
+}
 
-  .btn-info{
-    background: #6c757d !important;
-    border-color: #6c757d !important;
-  }
+
