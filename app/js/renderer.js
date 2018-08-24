@@ -421,30 +421,6 @@ function clearInput() {
   totalpunicaoFinalV.innerHTML = '';
 }
 
-// play end pause
-// function play() {
-//   console.log(botaoPlay);
-//   const item = document.querySelector('.fa-play-circle');
-
-//   if (botaoPlay == item) {
-//     // fundoBtn.classList.remove("starButton");
-//     botaoPlay.classList.remove("fa-play-circle");
-
-//     botaoPlay.classList.add("fa-pause-circle");
-//     // fundoBtn.classList.add("pauseButton");
-//     console.log("ativo btn pause");
-//   } else {
-//     // fundoBtn.classList.remove("pauseButton");
-//     botaoPlay.classList.remove("fa-pause-circle");
-
-//     // fundoBtn.classList.add("starButton");
-//     botaoPlay.classList.add("fa-play-circle");
-//     console.log("ativo btn play");
-//   }
-
-//   console.log("click play");
-//   timer.iniciar(tempo1);
-// };
 
 
 
