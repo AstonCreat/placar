@@ -5,10 +5,14 @@ app.on('ready', () => {
     console.log("aplicacao iniciada");
     let mainWindows = new BrowserWindow({
                fullscreen:true,
+               show:false,
             // width:1366,
             // height:768,
              frame:false
     });
+    mainWindows.once("ready-to-show",()=>{
+        mainWindows.show();
+    })
     mainWindows.loadURL(`file://${__dirname}/app/index.html`);
    });
 
